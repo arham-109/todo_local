@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST | Muhammad Arham</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body> 
+    <div class="flex justify-center items-center h-screen bg-blue-950">
+        <div class="bg-white h-10/12 w-7/8 rounded-2xl overflow-y-auto">
+            <h1 class="flex justify-center my-4 text-4xl text-violet-400 font-bold font-sans">
+                TODO APP
+            </h1>
+            <form class="flex flex-col gap-y-2 items-center text-center font-serif " onsubmit="gen_todo(event)">
+                <input type="text" placeholder="Enter Todo"
+                    class=" border border-blue-300 p-3 m-4 rounded-md focus-visible:border-blue-800 transition-all duration-300 outline-none text-center w-5/6"
+                    id="username" required>
+                <button
+                    class="text-md font-medium bg-violet-400 p-3 w-1/2 items-center text-center rounded-md cursor-pointer hover:bg-violet-800 hover:text-white transition-all duration-500 font-sans"
+                    type="submit">
+                    ADD
+                </button>
+            </form>
+
+           <div id="output">
+    </div>
+        </div>
+    </div>
+    <script src="script.mjs"></script>
+</body>
+
+</html>
