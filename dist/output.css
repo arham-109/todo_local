@@ -354,9 +354,24 @@
       border-color: var(--color-blue-800);
     }
   }
+  .sm\:w-1 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 1);
+    }
+  }
   .sm\:w-1\/2 {
     @media (width >= 40rem) {
       width: calc(1/2 * 100%);
+    }
+  }
+  .sm\:w-1\/22 {
+    @media (width >= 40rem) {
+      width: calc(1/22 * 100%);
+    }
+  }
+  .md\:w-1 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 1);
     }
   }
   .md\:w-1\/2 {
@@ -412,6 +427,11 @@
   .\32 xl\:w-\[31\%\] {
     @media (width >= 96rem) {
       width: 31%;
+    }
+  }
+  .\32 xl\:w-\[31\] {
+    @media (width >= 96rem) {
+      width: 31;
     }
   }
 }
